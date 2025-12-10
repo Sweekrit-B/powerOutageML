@@ -202,7 +202,7 @@ Here is the cleaned data:
 First, let's look at the univariate analysis of the outage impact metrics.
 <div style="text-align: center;">
   <iframe src="assets/univariate_output_combined.html" 
-          style="width: 100%; height: 100vh; border: 0;"></iframe>
+          style="width: 100%; height: 500; border: 0;"></iframe>
 </div>
 
 Analyzing these column univariate analysis, we note that all the columns have a heavy right skew, with a mean close to 0 despite maximum values moving far into the thousands (for `OUTAGE.DURATION` and `DEMAND.LOSS.MW`) or far into the millions (for `CUSTOMERS.AFFECTED`). This means two things:
@@ -215,7 +215,7 @@ Next, look at the univariate analysis of three climate fatures of interest. Spec
 
 <div style="text-align: center;">
   <iframe src="assets/univariate_climate_time_combined.html" 
-          style="width: 100%; height: 100vh; border: 0;"></iframe>
+          style="width: 100%; height: 500; border: 0;"></iframe>
 </div>
 
 We can make the following observations with all these graphs:
@@ -235,10 +235,9 @@ We can focus on the climate features of interest from our univariate analysis fo
 
 #### Climate Region
 
-<div style="display: flex; justify-content: center;">
-  <iframe src="assets\bivariate_climate_region_renamed.html" 
-          height="500" 
-          frameborder="0"></iframe>
+<div style="text-align: center;">
+  <iframe src="assets/bivariate_climate_region_renamed.html" 
+          style="width: 100%; height: 500; border: 0;"></iframe>
 </div>
 
 We can make the following notes about this graph:
@@ -247,19 +246,17 @@ We can make the following notes about this graph:
 
 #### Climate Category
 
-<div style="display: flex; justify-content: center;">
+<div style="text-align: center;">
   <iframe src="assets/bivariate_climate_category.html" 
-          height="500" 
-          frameborder="0"></iframe>
+          style="width: 100%; height: 500; border: 0;"></iframe>
 </div>
 
 We can see that there seems to be no significant difference between any of the impact metrics that we have defined and the category of climate (i.e. whether the year is warm, cold, or normal). This implies that there is no relationship with the severity of an outage and the temperature of that year. This is unexpected - I expected years with higher or lower than average temperatures to have greater outages, possibly due to increased severe weather events.
 
 #### Month
-<div style="display: flex; justify-content: center;">
+<div style="text-align: center;">
   <iframe src="assets/bivariate_month.html" 
-          height="500" 
-          frameborder="0"></iframe>
+          style="width: 100%; height: 500; border: 0;"></iframe>
 </div>
 
 We can make the following notes about this graph:
@@ -268,5 +265,3 @@ We can make the following notes about this graph:
 <div style="display: flex; justify-content: center; gap: 20px;">
     <img src="reference_imgs/hurricane_season_graph.png" width="400">
 </div>
-
-hello
