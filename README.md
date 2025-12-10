@@ -201,9 +201,10 @@ Here is the cleaned data:
 
 First, let's look at the univariate analysis of the outage impact metrics.
 
-<div style="display: flex; justify-content: center;">
+<div style="text-align: center;">
   <iframe src="assets/univariate_output_combined.html" 
           width="200%" 
+          height="400" 
           frameborder="0"></iframe>
 </div>
 
@@ -215,9 +216,10 @@ Analyzing these column univariate analysis, we note that all the columns have a 
 
 Next, look at the univariate analysis of three climate fatures of interest. Specifically, the `CLIMATE.REGION`, `CLIMATE.CATEGORY`, and `MONTH`.
 
-<div style="display: flex; justify-content: center;">
+<div style="text-align: center;">
   <iframe src="assets/univariate_climate_time_combined.html" 
           width="200%" 
+          height="500" 
           frameborder="0"></iframe>
 </div>
 
@@ -241,6 +243,7 @@ We can focus on the climate features of interest from our univariate analysis fo
 <div style="display: flex; justify-content: center;">
   <iframe src="assets/bivariate_climate_region.html" 
           width="200%" 
+          height="500" 
           frameborder="0"></iframe>
 </div>
 
