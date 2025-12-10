@@ -625,6 +625,11 @@ This baseline model is a **decision tree model** with no hyperparameter training
 
 Overall, I had 4 pieces of nominal data, 1 pieces of ordinal data, and 6 pieces of ordinal data. I performed the necessary encodings by using a one hot encoder (`OneHotEncoder(drop='first', handle_unknown='ignore')`) for the nominal values and an ordinal encoder (`OrdinalEncoder(categories=[<categories>], dtype=int)`) for the ordinal column.
 
+Furthermore, in preprocessing data for this model, I took steps here to impute values into my data in case they were null. My justifition was that I needed to ensure that my model could be fit without errors due to missing data.
+
+1. I imputed categorical values using probabilistic imputation, sampling from the observed category distributions. This preserves the original distribution of the categories, which is important as these columns heavily influence classification decision making based on "what they are", not the "values they have"
+2. I imputed numerical values using median imputation. This is because for numerical values a large portion of them had significant outliers (as I indicated earlier). Using mean imputation would have imputed the dataset with high-biased values and moved my descriptive statistics upward, while probabilistic imputation had the potential to put more outliers into the dataset.
+
 I was able to set my model accuracy at ~57.9% (this willl vary based on each run), with the following confusion matrix.
 
 <div style="text-align: center;">
