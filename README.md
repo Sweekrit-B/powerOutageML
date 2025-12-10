@@ -201,10 +201,25 @@ Here is the cleaned data:
 
 First, let's look at the univariate analysis of the outage impact metrics.
 
-<iframe src="assets/univariate_outage_duration.html" width=300 height=400 frameborder="0"></iframe>
+<iframe src="assets/univariate_output_combined" width=300 height=400 frameborder="0"></iframe>
 
-<iframe src="assets/univariate_demand_loss_mw.html" width=300 height=400 frameborder="0"></iframe>
+Analyzing these column univariate analysis, we note that all the columns have a heavy right skew, with a mean close to 0 despite maximum values moving far into the thousands (for `OUTAGE.DURATION` and `DEMAND.LOSS.MW`) or far into the millions (for `CUSTOMERS.AFFECTED`). This means two things:
+1. In our bivariate analysis, it is in our best interest to remove the top 5-10% of values to remove these extreme outliers and get a better idea of any patterns that might arise in the data.
+2. When making predictions, if we were to go down a regression analysis route with these impact factors, we might face high RMSE values.
 
-<iframe src="assets/univariate_customers_affected.html" width=300 height=400 frameborder="0"></iframe>
+#### Climate features
 
-Analyzing these column univariate analysis, we note that all the columns have a heavy right skew, with a mean close to 0 despite maximum values moving far into the thousands (for `OUTAGE.DURATION` and `DEMAND.LOSS.MW`) or far into the millions (for `CUSTOMERS.AFFECTED`).
+Next, look at the univariate analysis of three climate fatures of interest. Specifically, the `CLIMATE.REGION`, `CLIMATE.CATEGORY`, and `MONTH`.
+
+<iframe src="assets/univariate_climate_time_combined" width=300 height=400 frameborder="0"></iframe>
+
+We can make the following observations with all these graphs:
+1. `CLIMATE.REGION`: The Northeast region by far faces the largest amount of power outages, with over 300 of them, followed by the South and then the West. Furthermore, the West North Central and Southwest regions face the least amount of power outages. This could imply that there are sub-characteristics present that cause them to have more/less outages.
+2. `CLIMATE.CATEGORY`: The most power outages occur in normal years, then cold years, and finally in warm years. However, unlike the climate region, we cannot be quick to assume that regional/climate characteristics cause this. It is more likely that the "normal" climate category encompasses a much larger portion of the years studied because the average year **is** normal.
+3. `MONTH`: The summer months seem to have the largest proportion of power outages, followed closely by the late winter months. This might be due to thunderstorms and tornadoes in the summer months and winter storms in the late winter. This can be verified by looking at the following reference graphs (News West 9, Fox 32, The Weather Channel).
+
+<div style="display: flex; justify-content: center; gap: 20px;">
+    <img src="reference_imgs/newswest_9_severe_weather_season.jpg" width="300">
+    <img src="reference_imgs/fox_32_tornados.webp" width="300">
+    <img src="reference_imgs/weather_channel_winter_storms.webp" width="300">
+</div>
