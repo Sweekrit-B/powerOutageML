@@ -200,12 +200,9 @@ Here is the cleaned data:
 #### Outage impact metrics
 
 First, let's look at the univariate analysis of the outage impact metrics.
-
 <div style="text-align: center;">
   <iframe src="assets/univariate_output_combined.html" 
-          width="200%" 
-          height="400" 
-          frameborder="0"></iframe>
+          style="width: 100%; height: 100vh; border: 0;"></iframe>
 </div>
 
 Analyzing these column univariate analysis, we note that all the columns have a heavy right skew, with a mean close to 0 despite maximum values moving far into the thousands (for `OUTAGE.DURATION` and `DEMAND.LOSS.MW`) or far into the millions (for `CUSTOMERS.AFFECTED`). This means two things:
@@ -218,9 +215,7 @@ Next, look at the univariate analysis of three climate fatures of interest. Spec
 
 <div style="text-align: center;">
   <iframe src="assets/univariate_climate_time_combined.html" 
-          width="200%" 
-          height="500" 
-          frameborder="0"></iframe>
+          style="width: 100%; height: 100vh; border: 0;"></iframe>
 </div>
 
 We can make the following observations with all these graphs:
@@ -273,3 +268,5 @@ We can make the following notes about this graph:
 <div style="display: flex; justify-content: center; gap: 20px;">
     <img src="reference_imgs/hurricane_season_graph.png" width="400">
 </div>
+
+hello
