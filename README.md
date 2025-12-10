@@ -229,9 +229,9 @@ We can make the following observations with all these graphs:
 3. `MONTH`: The summer months seem to have the largest proportion of power outages, followed closely by the late winter months. This might be due to thunderstorms and tornadoes in the summer months and winter storms in the late winter. This can be verified by looking at the following reference graphs (News West 9, Fox 32, The Weather Channel).
 
 <div style="display: flex; justify-content: center; gap: 20px;">
-    <img src="reference_imgs/newswest_9_severe_weather_season.jpg" width="300">
-    <img src="reference_imgs/fox_32_tornados.webp" width="300">
-    <img src="reference_imgs/weather_channel_winter_storms.webp" width="300">
+    <img src="reference_imgs/newswest_9_severe_weather_season.jpg" width="400">
+    <img src="reference_imgs/fox_32_tornados.webp" width="400">
+    <img src="reference_imgs/weather_channel_winter_storms.webp" width="400">
 </div>
 
 ### Bivariate analysis
