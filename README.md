@@ -247,6 +247,19 @@ We can make the following observations with all these graphs:
 
 We can focus on two of the climate features of interest from our univariate analysis for our bivariate analysis. For each of these categorical columns, we produced box plots.
 
+#### Climate Region
+<div style="text-align: center;">
+  <iframe
+    src="assets\bivariate_climate_region.html"
+    width="100%"
+    height="600"
+    frameborder="0"></iframe>
+</div>
+
+We can make the following notes about this graph:
+1. The East North Central, although having the largest mean and median outage duration, does not have a significantly greater demand lost or customers affected.
+2. The Northeast region seems to have significant variation in both the outage duration and the amount of customers affected, but relatively standard variance (as compared to other columns) for the demand lost.
+
 #### Climate Category
 
 <div style="text-align: center;">
@@ -507,7 +520,7 @@ Next, we have the aggreagation by count.
 </div>
 
 We can gain some interesting insights from this.
-1. The most outages seem to happen in the Northeast and in severe weather, with Northeastern severe weather outages being the most common power outage aggregate by far. This can imply that the Northeastern region faces significantly harsher climate conditions. However, it also has the highest rate of intentional attacks by a significant margin, implying that there might be infrastructure issues in the Northeast causing power outages.
+1. The most outages seem to happen in the Northeast and in severe weather, with Northeastern severe weather outages being the most common power outage aggregate by far. This can imply that the Northeastern region faces significantly harsher climate conditions, as our bivariate analysis before also revealed its uniqueness in the severity of its climate impact metrics. However, it also has the highest rate of intentional attacks by a significant margin, implying that there might be infrastructure issues in the Northeast causing power outages.
 2. The highest mean outage duration seems to be for severe weather events in the Northwest and East North Central region, implying that those regions have a more difficult time restoring power after severe weather events. However, we also note that severe weather as a whole has some of the highest outage durations on a per-region basis, implying that each region might be uniquely ill-equipped to deal with severe weather outages.
 
 Overall, we are able to get a variety of interesting insights through the graphs and many possible hypotheses that we can explore. It is important to note that although I extrapolate a lot of possibilities from the graphs drawn, **none of them are confirmed yet**.
