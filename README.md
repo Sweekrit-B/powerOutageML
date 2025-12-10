@@ -226,4 +226,4 @@ We can make the following observations with all these graphs:
 
 ### Bivariate analysis
 
-We can focus on the climate features of interest from our univariate analysis for our bivariate analysis. For each of these categorical columns, we produced box plots 
+We can focus on the climate features of interest from our univariate analysis for our bivariate analysis. For each of these categorical columns, we produced box plots. Hello
