@@ -230,7 +230,7 @@ We can make the following observations with all these graphs:
 2. `CLIMATE.CATEGORY`: The most power outages occur in normal years, then cold years, and finally in warm years. However, unlike the climate region, we cannot be quick to assume that regional/climate characteristics cause this. It is more likely that the "normal" climate category encompasses a much larger portion of the years studied because the average year **is** normal.
 3. `MONTH`: The summer months seem to have the largest proportion of power outages, followed closely by the late winter months. This might be due to thunderstorms and tornadoes in the summer months and winter storms in the late winter. This can be verified by looking at the following reference graphs (News West 9, Fox 32, The Weather Channel).
 
-<div style="display: flex; justify-content: center; gap: 20px;">
+<div style="display: flex; justify-content: center; gap: 20px; width=100%">
     <img src="reference_imgs/newswest_9_severe_weather_season.jpg" width="400">
     <img src="reference_imgs/fox_32_tornados.webp" width="400">
     <img src="reference_imgs/weather_channel_winter_storms.webp" width="400">
