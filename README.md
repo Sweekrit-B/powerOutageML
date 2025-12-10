@@ -201,10 +201,9 @@ Here is the cleaned data:
 
 First, let's look at the univariate analysis of the outage impact metrics.
 
-<div style="text-align: center;">
+<div style="display: flex; justify-content: center;">
   <iframe src="assets/univariate_output_combined.html" 
           width="200%" 
-          height="400" 
           frameborder="0"></iframe>
 </div>
 
@@ -216,10 +215,9 @@ Analyzing these column univariate analysis, we note that all the columns have a 
 
 Next, look at the univariate analysis of three climate fatures of interest. Specifically, the `CLIMATE.REGION`, `CLIMATE.CATEGORY`, and `MONTH`.
 
-<div style="text-align: center;">
+<div style="display: flex; justify-content: center;">
   <iframe src="assets/univariate_climate_time_combined.html" 
           width="200%" 
-          height="400" 
           frameborder="0"></iframe>
 </div>
 
@@ -240,10 +238,9 @@ We can focus on the climate features of interest from our univariate analysis fo
 
 #### Climate Region
 
-<div style="text-align: center;">
+<div style="display: flex; justify-content: center;">
   <iframe src="assets/bivariate_climate_region.html" 
           width="200%" 
-          height="400" 
           frameborder="0"></iframe>
 </div>
 
@@ -253,20 +250,18 @@ We can make the following notes about this graph:
 
 #### Climate Category
 
-<div style="text-align: center;">
+<div style="display: flex; justify-content: center;">
   <iframe src="assets/bivariate_climate_category.html" 
           width="200%" 
-          height="400" 
           frameborder="0"></iframe>
 </div>
 
 We can see that there seems to be no significant difference between any of the impact metrics that we have defined and the category of climate (i.e. whether the year is warm, cold, or normal). This implies that there is no relationship with the severity of an outage and the temperature of that year. This is unexpected - I expected years with higher or lower than average temperatures to have greater outages, possibly due to increased severe weather events.
 
 #### Month
-<div style="text-align: center;">
+<div style="display: flex; justify-content: center;">
   <iframe src="assets/bivariate_month.html" 
           width="200%" 
-          height="400" 
           frameborder="0"></iframe>
 </div>
 
