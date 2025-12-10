@@ -243,7 +243,7 @@ We can focus on the climate features of interest from our univariate analysis fo
 #### Climate Region
 <div style="text-align: center;">
   <iframe
-    src="assets/bivariate_climate_region_renamed.html"
+    src="assets/bivariate_climate_region.html"
     width="100%"
     height="600"
     frameborder="0"></iframe>
