@@ -230,13 +230,7 @@ We can make the following observations with all these graphs:
 2. `CLIMATE.CATEGORY`: The most power outages occur in normal years, then cold years, and finally in warm years. However, unlike the climate region, we cannot be quick to assume that regional/climate characteristics cause this. It is more likely that the "normal" climate category encompasses a much larger portion of the years studied because the average year **is** normal.
 3. `MONTH`: The summer months seem to have the largest proportion of power outages, followed closely by the late winter months. This might be due to thunderstorms and tornadoes in the summer months and winter storms in the late winter. This can be verified by looking at the following reference graphs (News West 9, Fox 32, The Weather Channel).
 
-<div style="
-    width: 100%;
-    overflow-x: auto;
-    display: flex;
-    gap: 20px;
-    padding-bottom: 10px;
-">
+<div style="width: 100%; overflow-x: auto; display: flex; gap: 20px; padding-bottom: 10px;">
     <img src="reference_imgs/newswest_9_severe_weather_season.jpg" width="400">
     <img src="reference_imgs/fox_32_tornados.webp" width="400">
     <img src="reference_imgs/weather_channel_winter_storms.webp" width="400">
@@ -250,7 +244,7 @@ We can focus on two of the climate features of interest from our univariate anal
 #### Climate Region
 <div style="text-align: center;">
   <iframe
-    src="assets\bivariate_climate_region.html"
+    src="assets/bivariate_climate_region.html"
     width="100%"
     height="600"
     frameborder="0"></iframe>
@@ -399,7 +393,7 @@ First, we have the aggreagation by mean.
 </div>
 <div style="text-align: center;">
   <iframe
-    src="assets\heatmap_mean_outage_duration.html"
+    src="assets/heatmap_mean_outage_duration.html"
     width="100%"
     height="600"
     frameborder="0"></iframe>
@@ -513,7 +507,7 @@ Next, we have the aggreagation by count.
 </div>
 <div style="text-align: center;">
   <iframe
-    src="assets\heatmap_count_outage_duration.html"
+    src="assets/heatmap_count_outage_duration.html"
     width="100%"
     height="600"
     frameborder="0"></iframe>
@@ -552,7 +546,7 @@ For this test, the pair of hypotheses are:
 
 <div style="text-align: center;">
   <iframe
-    src="assets\missingness_permutation_test_climate_region_outage_duration.html"
+    src="assets/missingness_permutation_test_climate_region_outage_duration.html"
     width="100%"
     height="500"
     frameborder="0"></iframe>
@@ -570,7 +564,7 @@ For this test, the pair of hypotheses are:
 
 <div style="text-align: center;">
   <iframe
-    src="assets\missingness_permutation_test_postal_code_outage_duration.html"
+    src="assets/missingness_permutation_test_postal_code_outage_duration.html"
     width="100%"
     height="500"
     frameborder="0"></iframe>
@@ -592,7 +586,7 @@ This was important for the question I am trying to answer which relates regional
 
 <div style="text-align: center;">
   <iframe
-    src="assets\hypothesis_test_climate_region_binned_outage_duration.html"
+    src="assets/hypothesis_test_climate_region_binned_outage_duration.html"
     width="100%"
     height="500"
     frameborder="0"></iframe>
@@ -634,7 +628,7 @@ I was able to set my model accuracy at ~57.9% (this willl vary based on each run
 
 <div style="text-align: center;">
   <iframe
-    src="assets\decision_tree_confusion_matrix.html"
+    src="assets/decision_tree_confusion_matrix.html"
     width="100%"
     height="500"
     frameborder="0"></iframe>
@@ -679,7 +673,7 @@ The confusion matrices for both models are available here:
 
 <div style="text-align: center;">
   <iframe
-    src="assets\decision_tree_grid_search_confusion_matrix.html"
+    src="assets/decision_tree_grid_search_confusion_matrix.html"
     width="100%"
     height="500"
     frameborder="0"></iframe>
@@ -687,7 +681,7 @@ The confusion matrices for both models are available here:
 
 <div style="text-align: center;">
   <iframe
-    src="assets\random_forest_grid_search_confusion_matrix.html"
+    src="assets/random_forest_grid_search_confusion_matrix.html"
     width="100%"
     height="500"
     frameborder="0"></iframe>
@@ -699,13 +693,7 @@ For the fairness analysis, I chose to measure whether my model would perform bet
 
 The reason I used `POPDEN_RURAL` instead of `AREAPCT_URBAN` to binarize is because cities are usually very dense, leading to the majority of land in the U.S. to be rural. Therefore there is less variation (and therefore a worse split) in `AREAPCT_URBAN` as compared to `POPDEN_RURAL`, which while also might tend to be right skewed, does tend itself to an increased variance and therefore a more valid binarization. This can be verified using the univariate plots of the two columns:
 
-<div style="
-    width: 100%;
-    overflow-x: auto;
-    display: flex;
-    gap: 20px;
-    padding-bottom: 10px;
-">
+<div style="width: 100%; overflow-x: auto; display: flex; gap: 20px; padding-bottom: 10px;">
     <img src="univariate_analysis/AREAPCT_URBAN.png" width="400">
     <img src="univariate_analysis/POPDEN_RURAL.png" width="400">
 </div>
@@ -721,7 +709,7 @@ Through this, we were able to determine that the resulting p-value was 0.26, imp
 
 <div style="text-align: center;">
   <iframe
-    src="assets\fairness_permutation_test_popden_rural_signed_accuracy_difference.html"
+    src="assets/fairness_permutation_test_popden_rural_signed_accuracy_difference.html"
     width="100%"
     height="500"
     frameborder="0"></iframe>
