@@ -297,7 +297,7 @@ First, we have the aggreagation by mean.
 <table border="1" class="dataframe" style="min-width: 100%; border-collapse: collapse;">
   <thead>
     <tr style="text-align: right;">
-      <th>CLIMATE.REGION</th>
+      <th></th>
       <th>Central</th>
       <th>East North Central</th>
       <th>Northeast</th>
@@ -310,6 +310,16 @@ First, we have the aggreagation by mean.
     </tr>
   </thead>
   <tbody>
+    <tr style="text-align: right;">
+      <th></th>
+      <td>equipment failure</td>
+      <td>fuel supply emergency</td>
+      <td>intentional attack</td>
+      <td>islanding</td>
+      <td>public appeal</td>
+      <td>severe weather</td>
+      <td>system operability disruption</td>
+    </tr>
     <tr>
       <th></th>
       <td>322.00</td>
@@ -411,7 +421,7 @@ Next, we have the aggreagation by count.
 <table border="1" class="dataframe" style="min-width: 100%; border-collapse: collapse;">
   <thead>
     <tr style="text-align: right;">
-      <th>CLIMATE.REGION</th>
+      <th></th>
       <th>Central</th>
       <th>East North Central</th>
       <th>Northeast</th>
@@ -424,6 +434,16 @@ Next, we have the aggreagation by count.
     </tr>
   </thead>
   <tbody>
+    <tr style="text-align: right;">
+      <th></th>
+      <td>equipment failure</td>
+      <td>fuel supply emergency</td>
+      <td>intentional attack</td>
+      <td>islanding</td>
+      <td>public appeal</td>
+      <td>severe weather</td>
+      <td>system operability disruption</td>
+    </tr>
     <tr>
       <th></th>
       <td>5.0</td>
