@@ -84,7 +84,7 @@ I took the following steps to clean my data. Note that in this step, I DID NOT i
     - I do not replace 0 values in `OUTAGE.DURATION`. Although it is unlikely that a major outage event lasts 0 minutes there is no indication that this is a requirement for the dataset, and it is possible that power was restored immediately. 
 
 Here is the cleaned data:
-<table>
+<table width='500'>
   <thead>
     <tr>
       <th>YEAR</th>
@@ -202,7 +202,7 @@ Here is the cleaned data:
 First, let's look at the univariate analysis of the outage impact metrics.
 
 <div style="display: flex; justify-content: center; gap: 20px;">
-    <iframe src="assets/univariate_outage_duration.html" width="300" frameborder="0"></iframe>
-    <iframe src="assets/univariate_demand_loss_mw.html" width="300" frameborder="0"></iframe>
-    <iframe src="assets/univariate_customers_affected.html" width="300" frameborder="0"></iframe>
+    <iframe src="assets/univariate_outage_duration.html" frameborder="0"></iframe>
+    <iframe src="assets/univariate_demand_loss_mw.html" frameborder="0"></iframe>
+    <iframe src="assets/univariate_customers_affected.html" frameborder="0"></iframe>
 </div>
