@@ -43,11 +43,9 @@ There are **1534 rows** in the dataset, indicating the presence of 1534 major ou
     <tr><td>U.S._STATE</td><td>U.S. state where the outage occurred</td></tr>
     <tr><td>POSTAL.CODE</td><td>Postal code of the U.S. state</td></tr>
     <tr><td>NERC.REGION</td><td>NERC region involved in the outage</td></tr>
-
     <tr><td rowspan="3">Regional Climate Information</td><td>CLIMATE.REGION</td><td>U.S. climate region as defined by the National Centers for Environmental Information (9 regions total)</td></tr>
     <tr><td>ANOMALY.LEVEL</td><td>Oceanic Niño/La Niña index (ONI), 3-month running mean of SST anomalies</td></tr>
     <tr><td>CLIMATE.CATEGORY</td><td>Climate category (“Warm,” “Cold,” or “Normal”) based on ONI index ±0.5°C</td></tr>
-
     <tr><td rowspan="10">Outage Event Information</td><td>OUTAGE.START.DATE</td><td>Calendar day when the outage started</td></tr>
     <tr><td>OUTAGE.START.TIME</td><td>Time of day when the outage started</td></tr>
     <tr><td>OUTAGE.RESTORATION.DATE</td><td>Calendar day when power was fully restored</td></tr>
@@ -58,7 +56,6 @@ There are **1534 rows** in the dataset, indicating the presence of 1534 major ou
     <tr><td>OUTAGE.DURATION</td><td>Duration of the outage in minutes</td></tr>
     <tr><td>DEMAND.LOSS.MW</td><td>Peak demand lost during the outage (megawatts)</td></tr>
     <tr><td>CUSTOMERS.AFFECTED</td><td>Number of customers impacted by the outage</td></tr>
-
     <tr><td rowspan="11">Regional Land-Use Characteristics</td><td>POPULATION</td><td>Population of the U.S. state in the given year</td></tr>
     <tr><td>POPPCT_URBAN</td><td>Percentage of the population living in urban areas</td></tr>
     <tr><td>POPPCT_UC</td><td>Percentage of the population living in urban clusters</td></tr>
