@@ -19,7 +19,7 @@ import plotly.graph_objects as go
 import plotly.express as px
 from plotly.subplots import make_subplots
 import plotly.io as pio
-pio.renderers.default = "notebook"
+# pio.renderers.default = "notebook"
 
 # DSC 80 preferred styles
 pio.templates["dsc80"] = go.layout.Template(
