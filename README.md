@@ -201,8 +201,8 @@ Here is the cleaned data:
 
 First, let's look at the univariate analysis of the outage impact metrics.
 
-<iframe src="assets/univariate_outage_duration.html" frameborder="0"></iframe>
-<iframe src="assets/univariate_demand_loss_mw.html" frameborder="0"></iframe>
-<iframe src="assets/univariate_customers_affected.html" frameborder="0"></iframe>
+<iframe src="assets/univariate_outage_duration.html" width=300 height=400 frameborder="0"></iframe>
+<iframe src="assets/univariate_demand_loss_mw.html" width=300 height=400 frameborder="0"></iframe>
+<iframe src="assets/univariate_customers_affected.html" width=300 height=400 frameborder="0"></iframe>
 
 Analyzing these column univariate analysis, we note that all the columns have a heavy right skew, with a mean close to 0 despite maximum values moving far into the thousands (for `OUTAGE.DURATION` and `DEMAND.LOSS.MW`) or far into the millions (for `CUSTOMERS.AFFECTED`).
