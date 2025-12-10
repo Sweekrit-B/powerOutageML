@@ -21,4 +21,54 @@ However, I ultimately chose to go with the first question:
 
 Specifically, I plan to look into how various features that can affect regional climate (such as the geographic region, the month the outage occurred, the presence of a hurricane, etc.) play into the impact characteristics of outages, focusing on outage duration and the cause category.
 
-This questions is important because different climate patterns can strongly influence things like storm severity, equipment stress, grid load, etc. and can be key predictors into whether an area is going to be affected by a major power outage. Furthermore, in an era of climate change increasing the variance of climate events, being able to predict power outages quickly before they happen can be important to save infrastructure in times of climate disasters (such as hurricanes or major storms). Finally, we get an understanding of which events we can predict using regional and climate data, which allows us to expand our understanding regarding HOW the climate might affect power grids outside of storms harming infrastructure.
+Reasons why this question is important:
+1. Different climate patterns can strongly influence storm severity, equipment stress, grid load, etc. and can be key preidctors about whether an area is affected by a major power outage.
+2. Climate change sees an increased variance of climate events - being able to predict power outages quickly before they happened can be important to save infrastucture in times of climate disaster (ex. hurricanes or major storms).
+
+### Description of key columns and overall shape of dataset
+
+There are **1534 rows** in the dataset, indicating the presence of 1534 major outage events that occurred in the time period of the study, of which we find the following features relevant:
+
+<table>
+  <thead>
+    <tr>
+      <th>Category</th>
+      <th>Variable</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td rowspan="5">General Information</td><td>YEAR</td><td>Year when the outage event occurred</td></tr>
+    <tr><td>MONTH</td><td>Month when the outage event occurred</td></tr>
+    <tr><td>U.S._STATE</td><td>U.S. state where the outage occurred</td></tr>
+    <tr><td>POSTAL.CODE</td><td>Postal code of the U.S. state</td></tr>
+    <tr><td>NERC.REGION</td><td>NERC region involved in the outage</td></tr>
+
+    <tr><td rowspan="3">Regional Climate Information</td><td>CLIMATE.REGION</td><td>U.S. climate region as defined by the National Centers for Environmental Information (9 regions total)</td></tr>
+    <tr><td>ANOMALY.LEVEL</td><td>Oceanic Niño/La Niña index (ONI), 3-month running mean of SST anomalies</td></tr>
+    <tr><td>CLIMATE.CATEGORY</td><td>Climate category (“Warm,” “Cold,” or “Normal”) based on ONI index ±0.5°C</td></tr>
+
+    <tr><td rowspan="10">Outage Event Information</td><td>OUTAGE.START.DATE</td><td>Calendar day when the outage started</td></tr>
+    <tr><td>OUTAGE.START.TIME</td><td>Time of day when the outage started</td></tr>
+    <tr><td>OUTAGE.RESTORATION.DATE</td><td>Calendar day when power was fully restored</td></tr>
+    <tr><td>OUTAGE.RESTORATION.TIME</td><td>Time of day when power was fully restored</td></tr>
+    <tr><td>CAUSE.CATEGORY</td><td>High-level category describing the cause of the outage</td></tr>
+    <tr><td>CAUSE.CATEGORY.DETAIL</td><td>Detailed description of the event cause</td></tr>
+    <tr><td>HURRICANE.NAMES</td><td>Hurricane name if the outage was caused by a hurricane</td></tr>
+    <tr><td>OUTAGE.DURATION</td><td>Duration of the outage in minutes</td></tr>
+    <tr><td>DEMAND.LOSS.MW</td><td>Peak demand lost during the outage (megawatts)</td></tr>
+    <tr><td>CUSTOMERS.AFFECTED</td><td>Number of customers impacted by the outage</td></tr>
+
+    <tr><td rowspan="11">Regional Land-Use Characteristics</td><td>POPULATION</td><td>Population of the U.S. state in the given year</td></tr>
+    <tr><td>POPPCT_URBAN</td><td>Percentage of the population living in urban areas</td></tr>
+    <tr><td>POPPCT_UC</td><td>Percentage of the population living in urban clusters</td></tr>
+    <tr><td>POPDEN_URBAN</td><td>Population density of urban areas (persons/sq. mile)</td></tr>
+    <tr><td>POPDEN_UC</td><td>Population density of urban clusters (persons/sq. mile)</td></tr>
+    <tr><td>POPDEN_RURAL</td><td>Population density of rural areas (persons/sq. mile)</td></tr>
+    <tr><td>AREAPCT_URBAN</td><td>Percentage of the state’s land area classified as urban</td></tr>
+    <tr><td>AREAPCT_UC</td><td>Percentage of the state’s land area classified as urban clusters</td></tr>
+    <tr><td>PCT_LAND</td><td>Percentage of total U.S. land area represented by the state</td></tr>
+    <tr><td>PCT_WATER_TOT</td><td>Percentage of total U.S. water area represented by the state</td></tr>
+    <tr><td>PCT_WATER_INLAND</td><td>Percentage of total U.S. inland water area represented by the state</td></tr>
+  </tbody>
+</table>
