@@ -242,13 +242,7 @@ We can make the following observations with all these graphs:
 We can focus on two of the climate features of interest from our univariate analysis for our bivariate analysis. For each of these categorical columns, we produced box plots.
 
 #### Climate Region
-<div style="text-align: center;">
-  <iframe
-    src="assets/bivariate_climate_region.html"
-    width="100%"
-    height="600"
-    frameborder="0"></iframe>
-</div>
+<div style="text-align: center;"></div>
 <div style="text-align: center;">
   <iframe
     src="assets/bivariate_climate_region.html"
