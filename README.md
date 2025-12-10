@@ -310,18 +310,8 @@ First, we have the aggreagation by mean.
     </tr>
   </thead>
   <tbody>
-    <tr style="text-align: right;">
-      <th></th>
-      <td>equipment failure</td>
-      <td>fuel supply emergency</td>
-      <td>intentional attack</td>
-      <td>islanding</td>
-      <td>public appeal</td>
-      <td>severe weather</td>
-      <td>system operability disruption</td>
-    </tr>
     <tr>
-      <th></th>
+      <th>equipment failure</th>
       <td>322.00</td>
       <td>464.50</td>
       <td>215.80</td>
@@ -333,7 +323,7 @@ First, we have the aggreagation by mean.
       <td>61.00</td>
     </tr>
     <tr>
-      <th></th>
+      <th>fuel supply emergency</th>
       <td>2100.50</td>
       <td>104.00</td>
       <td>2771.17</td>
@@ -345,7 +335,7 @@ First, we have the aggreagation by mean.
       <td>0.00</td>
     </tr>
     <tr>
-      <th></th>
+      <th>intentional attack</th>
       <td>346.06</td>
       <td>813.11</td>
       <td>195.98</td>
@@ -357,7 +347,7 @@ First, we have the aggreagation by mean.
       <td>23.50</td>
     </tr>
     <tr>
-      <th></th>
+      <th>islanding</th>
       <td>125.33</td>
       <td>1.00</td>
       <td>881.00</td>
@@ -369,7 +359,7 @@ First, we have the aggreagation by mean.
       <td>68.20</td>
     </tr>
     <tr>
-      <th></th>
+      <th>public appeal</th>
       <td>1410.00</td>
       <td>733.00</td>
       <td>2655.00</td>
@@ -381,7 +371,7 @@ First, we have the aggreagation by mean.
       <td>439.50</td>
     </tr>
     <tr>
-      <th></th>
+      <th>severe weather</th>
       <td>1868.73</td>
       <td>3276.84</td>
       <td>2570.27</td>
@@ -393,7 +383,7 @@ First, we have the aggreagation by mean.
       <td>56.67</td>
     </tr>
     <tr>
-      <th></th>
+      <th>system operability disruption</th>
       <td>418.33</td>
       <td>2610.00</td>
       <td>773.50</td>
@@ -434,18 +424,8 @@ Next, we have the aggreagation by count.
     </tr>
   </thead>
   <tbody>
-    <tr style="text-align: right;">
-      <th></th>
-      <td>equipment failure</td>
-      <td>fuel supply emergency</td>
-      <td>intentional attack</td>
-      <td>islanding</td>
-      <td>public appeal</td>
-      <td>severe weather</td>
-      <td>system operability disruption</td>
-    </tr>
     <tr>
-      <th></th>
+      <th>equipment failure</th>
       <td>5.0</td>
       <td>3.0</td>
       <td>5.0</td>
@@ -457,7 +437,7 @@ Next, we have the aggreagation by count.
       <td>1.0</td>
     </tr>
     <tr>
-      <th></th>
+      <th>fuel supply emergency</th>
       <td>4.0</td>
       <td>4.0</td>
       <td>14.0</td>
@@ -469,7 +449,7 @@ Next, we have the aggreagation by count.
       <td>0.0</td>
     </tr>
     <tr>
-      <th></th>
+      <th>intentional attack</th>
       <td>34.0</td>
       <td>20.0</td>
       <td>131.0</td>
@@ -481,7 +461,7 @@ Next, we have the aggreagation by count.
       <td>4.0</td>
     </tr>
     <tr>
-      <th></th>
+      <th>islanding</th>
       <td>3.0</td>
       <td>1.0</td>
       <td>1.0</td>
@@ -493,7 +473,7 @@ Next, we have the aggreagation by count.
       <td>5.0</td>
     </tr>
     <tr>
-      <th></th>
+      <th>public appeal</th>
       <td>2.0</td>
       <td>2.0</td>
       <td>4.0</td>
@@ -505,7 +485,7 @@ Next, we have the aggreagation by count.
       <td>2.0</td>
     </tr>
     <tr>
-      <th></th>
+      <th>severe weather</th>
       <td>133.0</td>
       <td>104.0</td>
       <td>175.0</td>
@@ -517,7 +497,7 @@ Next, we have the aggreagation by count.
       <td>4.0</td>
     </tr>
     <tr>
-      <th></th>
+      <th>system operability disruption</th>
       <td>10.0</td>
       <td>3.0</td>
       <td>14.0</td>
