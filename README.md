@@ -253,9 +253,9 @@ We can focus on two of the climate features of interest from our univariate anal
 We can make the following notes about this graph:
 1. The East North Central, although having the largest mean and median outage duration, does not have a significantly greater demand lost or customers affected.
 2. The Northeast region seems to have significant variation in both the outage duration and the amount of customers affected, but relatively standard variance (as compared to other columns) for the demand lost.
-
+Hello
 #### Climate Category
-
+<div></div>
 <div style="text-align: center;">
   <iframe
     src="assets/bivariate_climate_category.html"
