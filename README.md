@@ -203,7 +203,7 @@ First, let's look at the univariate analysis of the outage impact metrics.
 
 <div style="text-align: center;">
   <iframe src="assets/univariate_output_combined.html" 
-          width="90%" 
+          width="200%" 
           height="400" 
           frameborder="0"></iframe>
 </div>
@@ -218,7 +218,7 @@ Next, look at the univariate analysis of three climate fatures of interest. Spec
 
 <div style="text-align: center;">
   <iframe src="assets/univariate_climate_time_combined.html" 
-          width="90%" 
+          width="200%" 
           height="400" 
           frameborder="0"></iframe>
 </div>
@@ -238,3 +238,41 @@ We can make the following observations with all these graphs:
 
 We can focus on the climate features of interest from our univariate analysis for our bivariate analysis. For each of these categorical columns, we produced box plots.
 
+#### Climate Region
+
+<div style="text-align: center;">
+  <iframe src="assets/bivariate_climate_region.html" 
+          width="200%" 
+          height="400" 
+          frameborder="0"></iframe>
+</div>
+
+We can make the following notes about this graph:
+1. The East North Central, although having the largest mean and median outage duration, does not have a significantly greater demand lost or customers affected.
+2. The Northeast region seems to have significant variation in both the outage duration and the amount of customers affected, but relatively standard variance (as compared to other columns) for the demand lost.
+
+#### Climate Category
+
+<div style="text-align: center;">
+  <iframe src="assets/bivariate_climate_category.html" 
+          width="200%" 
+          height="400" 
+          frameborder="0"></iframe>
+</div>
+
+We can see that there seems to be no significant difference between any of the impact metrics that we have defined and the category of climate (i.e. whether the year is warm, cold, or normal). This implies that there is no relationship with the severity of an outage and the temperature of that year. This is unexpected - I expected years with higher or lower than average temperatures to have greater outages, possibly due to increased severe weather events.
+
+#### Month
+<div style="text-align: center;">
+  <iframe src="assets/bivariate_month.html" 
+          width="200%" 
+          height="400" 
+          frameborder="0"></iframe>
+</div>
+
+We can make the following notes about this graph:
+1. At first glance, other than September (which we will talk about in the next point), there do not seem to be any obvious differences month by month for each of the impact metrics - outage duration shows the most variation by month, but common groupings (ex. seasonal) do not reveal any clear patterns.
+2. However, here seems to be a slightly larger mean outage duration and demand lost in September. This makes sense, considering that September is the peak of hurricane season, as showcased by the reference graph from NOAA. 
+<div style="display: flex; justify-content: center; gap: 20px;">
+    <img src="reference_imgs/hurricane_season_graph.png" width="400">
+</div>
