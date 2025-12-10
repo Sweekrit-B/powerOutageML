@@ -279,5 +279,3 @@ We can make the following notes about this graph:
 <div style="display: flex; justify-content: center; gap: 20px;">
     <img src="reference_imgs/hurricane_season_graph.png" width="400">
 </div>
-
-hello
