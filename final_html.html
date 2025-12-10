@@ -11560,7 +11560,18 @@ Saved figure to heatmap_analysis\heatmap_count_outage_duration.png
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p>For this missingness analysis, I chose to focus on the <code>OUTAGE.DURATION</code> column - I was interested in analyzing whether this column's missing values were MAR (missing at random) and therefore dependent on any other "feature columns". Specifically, in my analysis I tried to determine if <code>OUTAGE.DURATION</code> was MAR or not MAR when compared against <code>CLIMATE.REGION</code> and <code>POSTAL.CODE</code>. To perform my analysis most efficiently, I chose to define a variety of helper functions:</p>
+<h3 id="NMAR-Analysis">NMAR Analysis<a class="anchor-link" href="#NMAR-Analysis">¶</a></h3><p>I think that the <code>DEMAND.LOSS.MW</code> is likely an NMAR variable, which means the missingness of it depends on itself. There are a few reasons this might be:</p>
+<ol>
+<li>The outage occurs over a very large (and therefore hard to calculate) area or where peak demand usage is highly variable, then MW lost might not be recorded. In this case, you find that high (or hard to calculate) values of <code>DEMAND.LOSS.MW</code> might be missing.</li>
+<li>The outage occurs in a certain utility company's jurisdiction. If that company has no historical measurement infrastructure or poor monitoring, then the <code>DEMAND.LOSS.MW</code> value might not be viable to calculate.</li>
+</ol>
+<p>In order to verify that <code>DEMAND.LOSS.MW</code> NMAR or explaining the missingness as MAR, we can obtain a couple of pieces of additional data:</p>
+<ol>
+<li>The amount of area that an outage covers.</li>
+<li>Whether the outage occurred in a rural/urban area - urban areas are more likely to have variable peak demands.</li>
+<li>The utility company in charge of the electrical grid where the major power outage occurred.</li>
+</ol>
+<h3 id="Missingness-Dependency">Missingness Dependency<a class="anchor-link" href="#Missingness-Dependency">¶</a></h3><p>For this missingness analysis, I chose to focus on the <code>OUTAGE.DURATION</code> column - I was interested in analyzing whether this column's missing values were MAR (missing at random) and therefore dependent on any other "feature columns". Specifically, in my analysis I tried to determine if <code>OUTAGE.DURATION</code> was MAR or not MAR when compared against <code>CLIMATE.REGION</code> and <code>POSTAL.CODE</code>. To perform my analysis most efficiently, I chose to define a variety of helper functions:</p>
 <ol>
 <li><code>get_necessary_columns</code> retrieves relevant columns from the data to make calling on the data within functions and debugging easier.</li>
 <li><code>shuffle_missing</code> is the shuffling function used to perform the permutation test between null and not-null data.</li>
@@ -11674,7 +11685,7 @@ Saved figure to heatmap_analysis\heatmap_count_outage_duration.png
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="MAR-Dependence-on-Climate-Region">MAR Dependence on Climate Region<a class="anchor-link" href="#MAR-Dependence-on-Climate-Region">¶</a></h3><p>The following code performs the test checking if the missing values in outage duration depend on the climate region. Specifically, the pair of hypotheses are:</p>
+<h4 id="MAR-Dependence-on-Climate-Region">MAR Dependence on Climate Region<a class="anchor-link" href="#MAR-Dependence-on-Climate-Region">¶</a></h4><p>The following code performs the test checking if the missing values in outage duration depend on the climate region. Specifically, the pair of hypotheses are:</p>
 <ol>
 <li><strong>Null</strong>: The missingness of OUTAGE.DURATION is not MAR dependent on CLIMATE.REGION.</li>
 <li><strong>Alternative</strong>: The missingness of OUTAGE.DURATION is MAR dependent on CLIMATE.REGION.</li>
@@ -11737,7 +11748,7 @@ Saved figure to hyp_perm_test_analysis\missingness_permutation_test_climate_regi
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="MAR-Dependence-on-State">MAR Dependence on State<a class="anchor-link" href="#MAR-Dependence-on-State">¶</a></h3><p>The following code performs the test checking if the missing values in outage duration depend on the state (or the postal code column). Specifically, the pair of hypotheses are:</p>
+<h4 id="MAR-Dependence-on-State">MAR Dependence on State<a class="anchor-link" href="#MAR-Dependence-on-State">¶</a></h4><p>The following code performs the test checking if the missing values in outage duration depend on the state (or the postal code column). Specifically, the pair of hypotheses are:</p>
 <ol>
 <li><strong>Null</strong>: The missingness of OUTAGE.DURATION is not MAR dependent on POSTAL.CODE.</li>
 <li><strong>Alternative</strong>: The missingness of OUTAGE.DURATION is MAR dependent on POSTAL.CODE.</li>
