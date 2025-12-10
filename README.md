@@ -540,43 +540,43 @@ In order to verify that `DEMAND.LOSS.MW` NMAR or explaining the missingness as M
 
 ### Missingness Dependency
 
-For this part of the analysis, I chose to hone in on the `OUTAGE.DURATION` column, as I was interested in whether this impact column's missing values were dependent on `CAUSE.CATEGORY` or `MONTH`.
+For this missingness analysis, I chose to focus on the `OUTAGE.DURATION` column - I was interested in analyzing whether this column's missing values were MAR (missing at random) and therefore dependent on any other "feature columns". Specifically, in my analysis I tried to determine if `OUTAGE.DURATION` was MAR or not MAR when compared against `CLIMATE.REGION` and `POSTAL.CODE`.
 
-### `CAUSE.CATEGORY`
+### `CLIMATE.REGION`
 
 For this test, the pair of hypotheses are:
 
-1. **Null**: The missingness of OUTAGE.DURATION is not MAR dependent on CAUSE.CATEGORY.
-2. **Alternative**: The missingness of OUTAGE.DURATION is MAR dependent on CAUSE.CATEGORY.
-3. **Test statistic**: The TVD of CAUSE.CATEGORY values for missing and non-missing values.
+1. **Null**: The missingness of OUTAGE.DURATION is not MAR dependent on CLIMATE.REGION.
+2. **Alternative**: The missingness of OUTAGE.DURATION is MAR dependent on CLIMATE.REGION.
+3. **Test statistic**: The TVD of CLIMATE.REGION values for missing and non-missing values.
 
 <div style="text-align: center;">
   <iframe
-    src="assets\missingness_permutation_test_cause_category_outage_duration.html"
+    src="assets\missingness_permutation_test_climate_region_outage_duration.html"
     width="100%"
     height="500"
     frameborder="0"></iframe>
 </div>
 
-we find that the p-value of this permutation test is less than 0.05, the significance threshold used in data science. This means that we **reject the null** and can therefore state that the missigness of OUTAGE.DURATION is MAR dependent on CAUSE.CATEGORY.
+If we run the code above, we find that the p-value of this permutation test is less than 0.05, the significance threshold used in data science. This means that we **reject the null** and can therefore state that the missigness of OUTAGE.DURATION is MAR dependent on CLIMATE.REGION.
 
-### `MONTH`
+### `POSTAL.CODE`
 
 For this test, the pair of hypotheses are:
 
-1. **Null**: The missingness of OUTAGE.DURATION is not MAR dependent on MONTH.
-2. **Alternative**: The missingness of OUTAGE.DURATION is MAR dependent on MONTH.
+1. **Null**: The missingness of OUTAGE.DURATION is not MAR dependent on POSTAL.CODE.
+2. **Alternative**: The missingness of OUTAGE.DURATION is MAR dependent on POSTAL.CODE.
 3. **Test statistic**: The TVD of MONTH values for missing and non-missing values.
 
 <div style="text-align: center;">
   <iframe
-    src="assets\missingness_permutation_test_month_outage_duration.html"
+    src="assets\missingness_permutation_test_postal_code_outage_duration.html"
     width="100%"
     height="500"
     frameborder="0"></iframe>
 </div>
 
-We find that the p-value of this permutation test is greater than 0.05, the significance threshold used in data science. This means that we **fail to reject the null** and can therefore state that the missigness of MONTH is not MAR dependent on CAUSE.CATEGORY.
+If we run the code above, we find that the p-value of this permutation test is greater than 0.05, the significance threshold used in data science. This means that we **fail to reject the null** and can therefore state that the missigness of MONTH is not MAR dependent on POSTAL.CODE.
 
 ## Hypothesis Testing
 
@@ -666,7 +666,7 @@ For the **Decision Tree** model, I made sure to optimize for the following hyper
 For the **Random Forest** model, I made sure to optimize for the same hyperparameters as the decision tree plus one more:
 1. `n_estimators`: this controls how MANY decision trees I am using to make the general decision. If I have too few, it can lead to unstable predictions, but too many can lead to unnecessary computation and no gain.
 
-Through Grid Search and testing two modeling techniques, I got a decision tree model at** ~64.8% accuracy**, with the optimal hyperparameters being a max depth of 8 and a minimum samples split of 5. I also got a random forest model with a **~69.4% accuracy**, with the optimal hyperparameters being a max depth of 36, a minimum samples split of 6, and an estimators count of 90.
+Through Grid Search and testing two modeling techniques, I got a decision tree model at **~64.8% accuracy**, with the optimal hyperparameters being a max depth of 8 and a minimum samples split of 5. I also got a random forest model with a **~69.4% accuracy**, with the optimal hyperparameters being a max depth of 36, a minimum samples split of 6, and an estimators count of 90.
 
 This means that my **best model**  was a Random Forest model with 90 trees in its ensemble estimation, each of which had a max depth of 36 and only made splits at a node if there were a minimum of 6 values. This enabled us to have a **69.4%** accuracy, which is a **11.42%** increase in accuracy. Overall, we see that the random forest model was an improvement over our decision tree model because it:
 1. Removed multicollinearity and made the model more interpretable if we choose to look at coefficients.
