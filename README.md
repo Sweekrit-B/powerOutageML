@@ -201,7 +201,12 @@ Here is the cleaned data:
 
 First, let's look at the univariate analysis of the outage impact metrics.
 
-<iframe src="assets/univariate_output_combined" width = 1000 height=400 frameborder="0"></iframe>
+<div style="text-align: center;">
+  <iframe src="assets/univariate_output_combined.html" 
+          width="90%" 
+          height="400" 
+          frameborder="0"></iframe>
+</div>
 
 Analyzing these column univariate analysis, we note that all the columns have a heavy right skew, with a mean close to 0 despite maximum values moving far into the thousands (for `OUTAGE.DURATION` and `DEMAND.LOSS.MW`) or far into the millions (for `CUSTOMERS.AFFECTED`). This means two things:
 1. In our bivariate analysis, it is in our best interest to remove the top 5-10% of values to remove these extreme outliers and get a better idea of any patterns that might arise in the data.
@@ -211,7 +216,12 @@ Analyzing these column univariate analysis, we note that all the columns have a 
 
 Next, look at the univariate analysis of three climate fatures of interest. Specifically, the `CLIMATE.REGION`, `CLIMATE.CATEGORY`, and `MONTH`.
 
-<iframe src="assets/univariate_climate_time_combined" width = 10000 height=400 frameborder="0"></iframe>
+<div style="text-align: center;">
+  <iframe src="assets/univariate_climate_time_combined.html" 
+          width="90%" 
+          height="400" 
+          frameborder="0"></iframe>
+</div>
 
 We can make the following observations with all these graphs:
 1. `CLIMATE.REGION`: The Northeast region by far faces the largest amount of power outages, with over 300 of them, followed by the South and then the West. Furthermore, the West North Central and Southwest regions face the least amount of power outages. This could imply that there are sub-characteristics present that cause them to have more/less outages.
