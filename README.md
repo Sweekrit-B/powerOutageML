@@ -256,6 +256,7 @@ We can make the following notes about this graph:
 <div style="display: flex; justify-content: center;">
   <iframe src="assets/bivariate_climate_category.html" 
           width="200%" 
+          height="500" 
           frameborder="0"></iframe>
 </div>
 
@@ -265,6 +266,7 @@ We can see that there seems to be no significant difference between any of the i
 <div style="display: flex; justify-content: center;">
   <iframe src="assets/bivariate_month.html" 
           width="200%" 
+          height="500" 
           frameborder="0"></iframe>
 </div>
 
