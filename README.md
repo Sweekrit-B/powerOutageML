@@ -287,6 +287,12 @@ We can make the following notes about this graph:
     <img src="reference_imgs/hurricane_season_graph.png" width="400">
 </div>
 
+### Aggregate Analysis
+
+Following the univariate and bivariate analysis, I was interested in aggregating the cause category, climate region, and the mean/count of outages that occurred. This would give me insight into which combination of the two features would have the highest mean outage duration and highest number of outages. Not only could this allow me to define more specific and interesting hypothesis tests later on, but also gives insight into what causes high-impact outages in each region.
+
+First, we have the aggreagation by mean.
+
 <div style="width: 100%; overflow-x: auto;">
 <table border="1" class="dataframe" style="min-width: 100%; border-collapse: collapse;">
   <thead>
@@ -399,6 +405,8 @@ We can make the following notes about this graph:
     frameborder="0"></iframe>
 </div>
 
+Next, we have the aggreagation by count.
+
 <div style="width: 100%; overflow-x: auto;">
 <table border="1" class="dataframe" style="min-width: 100%; border-collapse: collapse;">
   <thead>
@@ -510,3 +518,9 @@ We can make the following notes about this graph:
     height="600"
     frameborder="0"></iframe>
 </div>
+
+We can gain some interesting insights from this.
+1. The most outages seem to happen in the Northeast and in severe weather, with Northeastern severe weather outages being the most common power outage aggregate by far. This can imply that the Northeastern region faces significantly harsher climate conditions, as our bivariate analysis before also revealed its uniqueness in the severity of its climate impact metrics. However, it also has the highest rate of intentional attacks by a significant margin, implying that there might be infrastructure issues in the Northeast causing power outages.
+2. The highest mean outage duration seems to be for severe weather events in the Northwest and East North Central region, implying that those regions have a more difficult time restoring power after severe weather events. However, we also note that severe weather as a whole has some of the highest outage durations on a per-region basis, implying that each region might be uniquely ill-equipped to deal with severe weather outages.
+
+Overall, we are able to get a variety of interesting insights through the graphs and many possible hypotheses that we can explore. It is important to note that although I extrapolate a lot of possibilities from the graphs drawn, **none of them are confirmed yet**.
