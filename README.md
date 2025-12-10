@@ -286,3 +286,227 @@ We can make the following notes about this graph:
 <div style="display: flex; justify-content: center; gap: 20px;">
     <img src="reference_imgs/hurricane_season_graph.png" width="400">
 </div>
+
+<div style="width: 100%; overflow-x: auto;">
+<table border="1" class="dataframe" style="min-width: 100%; border-collapse: collapse;">
+  <thead>
+    <tr style="text-align: right;">
+      <th>CLIMATE.REGION</th>
+      <th>Central</th>
+      <th>East North Central</th>
+      <th>Northeast</th>
+      <th>Northwest</th>
+      <th>South</th>
+      <th>Southeast</th>
+      <th>Southwest</th>
+      <th>West</th>
+      <th>West North Central</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th></th>
+      <td>322.00</td>
+      <td>464.50</td>
+      <td>215.80</td>
+      <td>702.00</td>
+      <td>295.78</td>
+      <td>554.50</td>
+      <td>113.80</td>
+      <td>524.81</td>
+      <td>61.00</td>
+    </tr>
+    <tr>
+      <th></th>
+      <td>2100.50</td>
+      <td>104.00</td>
+      <td>2771.17</td>
+      <td>1.00</td>
+      <td>1440.00</td>
+      <td>0.00</td>
+      <td>76.00</td>
+      <td>1346.56</td>
+      <td>0.00</td>
+    </tr>
+    <tr>
+      <th></th>
+      <td>346.06</td>
+      <td>813.11</td>
+      <td>195.98</td>
+      <td>373.81</td>
+      <td>325.61</td>
+      <td>504.67</td>
+      <td>265.67</td>
+      <td>590.50</td>
+      <td>23.50</td>
+    </tr>
+    <tr>
+      <th></th>
+      <td>125.33</td>
+      <td>1.00</td>
+      <td>881.00</td>
+      <td>73.33</td>
+      <td>493.50</td>
+      <td>0.00</td>
+      <td>2.00</td>
+      <td>214.86</td>
+      <td>68.20</td>
+    </tr>
+    <tr>
+      <th></th>
+      <td>1410.00</td>
+      <td>733.00</td>
+      <td>2655.00</td>
+      <td>898.00</td>
+      <td>1008.46</td>
+      <td>2865.40</td>
+      <td>2275.00</td>
+      <td>798.25</td>
+      <td>439.50</td>
+    </tr>
+    <tr>
+      <th></th>
+      <td>1868.73</td>
+      <td>3276.84</td>
+      <td>2570.27</td>
+      <td>3368.14</td>
+      <td>1899.60</td>
+      <td>1520.36</td>
+      <td>2136.12</td>
+      <td>1554.73</td>
+      <td>56.67</td>
+    </tr>
+    <tr>
+      <th></th>
+      <td>418.33</td>
+      <td>2610.00</td>
+      <td>773.50</td>
+      <td>141.00</td>
+      <td>866.07</td>
+      <td>169.31</td>
+      <td>329.22</td>
+      <td>363.67</td>
+      <td>0.00</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+<div style="text-align: center;">
+  <iframe
+    src="assets\heatmap_mean_outage_duration.html"
+    width="100%"
+    height="600"
+    frameborder="0"></iframe>
+</div>
+
+<div style="width: 100%; overflow-x: auto;">
+<table border="1" class="dataframe" style="min-width: 100%; border-collapse: collapse;">
+  <thead>
+    <tr style="text-align: right;">
+      <th>CLIMATE.REGION</th>
+      <th>Central</th>
+      <th>East North Central</th>
+      <th>Northeast</th>
+      <th>Northwest</th>
+      <th>South</th>
+      <th>Southeast</th>
+      <th>Southwest</th>
+      <th>West</th>
+      <th>West North Central</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th></th>
+      <td>5.0</td>
+      <td>3.0</td>
+      <td>5.0</td>
+      <td>2.0</td>
+      <td>9.0</td>
+      <td>4.0</td>
+      <td>5.0</td>
+      <td>21.0</td>
+      <td>1.0</td>
+    </tr>
+    <tr>
+      <th></th>
+      <td>4.0</td>
+      <td>4.0</td>
+      <td>14.0</td>
+      <td>1.0</td>
+      <td>4.0</td>
+      <td>0.0</td>
+      <td>1.0</td>
+      <td>10.0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th></th>
+      <td>34.0</td>
+      <td>20.0</td>
+      <td>131.0</td>
+      <td>85.0</td>
+      <td>28.0</td>
+      <td>9.0</td>
+      <td>61.0</td>
+      <td>31.0</td>
+      <td>4.0</td>
+    </tr>
+    <tr>
+      <th></th>
+      <td>3.0</td>
+      <td>1.0</td>
+      <td>1.0</td>
+      <td>3.0</td>
+      <td>2.0</td>
+      <td>0.0</td>
+      <td>1.0</td>
+      <td>28.0</td>
+      <td>5.0</td>
+    </tr>
+    <tr>
+      <th></th>
+      <td>2.0</td>
+      <td>2.0</td>
+      <td>4.0</td>
+      <td>2.0</td>
+      <td>42.0</td>
+      <td>5.0</td>
+      <td>1.0</td>
+      <td>9.0</td>
+      <td>2.0</td>
+    </tr>
+    <tr>
+      <th></th>
+      <td>133.0</td>
+      <td>104.0</td>
+      <td>175.0</td>
+      <td>25.0</td>
+      <td>106.0</td>
+      <td>116.0</td>
+      <td>10.0</td>
+      <td>67.0</td>
+      <td>4.0</td>
+    </tr>
+    <tr>
+      <th></th>
+      <td>10.0</td>
+      <td>3.0</td>
+      <td>14.0</td>
+      <td>4.0</td>
+      <td>27.0</td>
+      <td>16.0</td>
+      <td>9.0</td>
+      <td>39.0</td>
+      <td>0.0</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+<div style="text-align: center;">
+  <iframe
+    src="assets\heatmap_count_outage_duration.html"
+    width="100%"
+    height="600"
+    frameborder="0"></iframe>
+</div>
