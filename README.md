@@ -22,7 +22,7 @@ However, I ultimately chose to go with the first question:
 Specifically, I plan to look into how various features that can affect regional climate (such as the geographic region, the month the outage occurred, the presence of a hurricane, etc.) play into the impact characteristics of outages, focusing on outage duration and the cause category.
 
 Reasons why this question is important:
-1. Different climate patterns can strongly influence storm severity, equipment stress, grid load, etc. and can be key preidctors about whether an area is affected by a major power outage.
+1. Different climate patterns can strongly influence storm severity, equipment stress, grid load, etc. and can be key predictors about whether an area is affected by a major power outage.
 2. Climate change sees an increased variance of climate events - being able to predict power outages quickly before they happened can be important to save infrastucture in times of climate disaster (ex. hurricanes or major storms).
 
 ### Description of key columns and overall shape of dataset
